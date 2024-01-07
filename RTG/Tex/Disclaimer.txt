@@ -1,0 +1,24 @@
+************************************************
+(1) The texture images Tex_0.png to Tex_60.png in this folder have been downloaded from:
+https://www.hiclipart.com/
+
+This, in consistency of laws pertaining to fair use, and those allowing educational institutions to use Internet images for educational purposes:
+
+"Fair use allows certain uses of copyrighted works without obtaining permission from the copyright owner. Fair use allows copying of copyrighted material in an educational setting, such as a teacher or a student using images in the classroom."
+
+[https://libguides.unm.edu/images/fairuse#:~:text=Fair%20Use%20in%20the%20Classroom,using%20images%20in%20the%20classroom.]
+
+************************************************
+(2) If any scams are encountered by any advertisements on the site hiclipart.com suggesting that your computer needs to be scanned for a virus, just ignore it and close that browser page. This is a common scam to make the user to download and run a program that in turn could contain a virus.
+
+************************************************
+(3) The images in this folder are only provided as examples and should be replaced, if used outside of this university course, especially if used for commercial purposes.
+
+The images are expected to be copyright-free, but if any person (or robot) have uploaded a copyrighted image to hiclipart.com, that is not permitted to be used commercially, thus, the disclaimer in this course, as formulated below in (4), is similar to those at hiclipart.com:
+https://www.hiclipart.com/terms-of-use
+
+************************************************
+(4) Disclaimer
+
+Uppsala University cannot be held responsible for any copyright violations that may arise from incorrect or inappropriate use of any images originally or directly downloaded from hiclipart.com. All users use these PNG cliparts at their own risk, and are entirely responsible for subsequent image usage and application.
+************************************************
