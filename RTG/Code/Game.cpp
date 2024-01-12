@@ -51,45 +51,37 @@ void Game::DrawMaze()
 
     //MazeBox Boundries
 
-    // ----RL-RL
+    // ----RL-RL   Bottom
     Maze(1); 
     Maze(2); 
     RevYaw(); 
-    Maze(2);
  
 
-    //----RR-RR
+    //----RR-RR    Right
     Maze(1);
     Maze(1);
-    Yaw();
+    Maze(1);
+    RevYaw();
+    
+
+    //------------- UP
+    Maze(1);
     Maze(2);
-
-
-    // ----RL-RL--
-    Maze(1);
+    Maze(2);
+    Maze(2);
     Maze(2);
     RevYaw();
-    Maze(2);
-    Maze(0);
+
+
+    //-------------- Left
     Maze(1);
+    Maze(1);
+    Maze(1);
+    Maze(3);
+    Maze(3);
     RevYaw();
 
-    //
-    Maze(1);
-    Maze(1);
-    Maze(1);
-    Maze(1);
-    RevYaw();
-
-
-    //
-    Maze(1);
-    Maze(1);
-    Maze(1);
-    Maze(1);
-    RevYaw();
-
-    //
+    //-----------   Bottom
     Maze(2);
     Maze(2);
     Maze(2);

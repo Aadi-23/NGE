@@ -8,6 +8,7 @@
 #include <SDL_opengl.h>
 #include <SDL_image.h>
 #include <gl/glu.h>
+#include <regex>
 #elif __APPLE__
 #define GL_SILENCE_DEPRECATION
 #include <SDL2/SDL.h>
@@ -90,7 +91,7 @@ protected:
     double  mFlyVel[3] = {0.,0.,0.};
     double  mFootholdVel[3] = {0.,0.,0.};
     double  mGravity = 20.;
-    double  mJumpInitVel = 12.;
+    double  mJumpInitVel = 6.;
     double  mPlayerAccel[3] = {0,-mGravity,0};
     double  mPlayerLookAtDir[3] = {1.,0.,0.};
     double  mFoothold = -1.;

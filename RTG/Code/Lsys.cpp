@@ -220,8 +220,8 @@ void Lsys::Draw_Cyl(double r, double height){
 //---------------------------------------------------------------------
 void Lsys::F(){
     //--------------------------------------------
-    Draw_Link();
     Draw_Node();
+    Draw_Link();
     mDrawCounter++;
     //--------------------------------------------
 }
@@ -326,6 +326,31 @@ void Lsys::Lsys_Axiom1(){
     glPopMatrix();
     //-----------------------
 }
+
+
+
+
+void Lsys::Lsys_Axiom3() {
+    Prim_Clear();
+    glPushMatrix(); /* => */ int stackLevel = 1;
+    mRec = 2;
+    mAlpha = 45.;
+    glRotated(90., 0., 1., 0.);
+    mRandSeed = mDrawCounter = 0;
+    Draw_Node();
+    string x = "F-F-F-F", rule = "]]F[[-FF";
+    For(i, mRec) x = regex_replace(x, regex("F"), rule);
+    For(i, x.length()) {
+        switch (x[i]) {
+        case 'F': F(); break;
+        case '+': Yaw(); break;
+        case '-': RevYaw(); break;
+        case '[': glPushMatrix(); stackLevel++; break;
+        case ']': if (stackLevel > 0) { glPopMatrix(); stackLevel--; } break;
+        }
+    }
+    while (stackLevel > 0) { glPopMatrix(); stackLevel--; }
+}
 //---------------------------------------------------------------------
 //---------------------------------------------------------------------
 //                        M1: F->F−F+F+FF−F−F+F
@@ -350,6 +375,21 @@ void Lsys::FX1(int depth){
     FX1(depth+1);
     Yaw();
     FX1(depth+1);
+
+   /* FX1(depth + 1);
+    RevYaw(); mLength *= .5;
+    FX1(depth + 1);
+    Yaw(); mLength *= 2.;
+    FX1(depth + 1);
+    Yaw(); mLength *= 2.;
+    FX1(depth + 1);
+    FX1(depth + 1);
+    RevYaw(); mLength *= .5;
+    FX1(depth + 1);
+    RevYaw(); mLength *= .5;
+    FX1(depth + 1);
+    Yaw(); mLength *= 2.;
+    FX1(depth + 1);*/
 }
 //---------------------------------------------------------------------
 //---------------------------------------------------------------------

@@ -855,11 +855,13 @@ void GUI::Draw(){
     //--------------------------------------------
     //Prim_A1_1();
     //Prim_A1_2();
-    //Lsys_Axiom1();
+    Lsys_Axiom1();
+
+   // Lsys_Axiom3();
 
     // Here  I am drawing the maze for the game
 
-    DrawMaze();
+    //DrawMaze();
     //--------------------------------------------
     //--------------------------------------------
     if (mMode == PLAY_MODE){
@@ -1179,7 +1181,7 @@ void GUI::MouseMotion(int x, int y, int xrel, int yrel){
     //--------------------------------------------
     else {
         mMouseMotionRelX += xrel; mMouseMotionRelY += yrel;
-        const double a = DEG2RAD * .02;
+        const double a = DEG2RAD * .1;
         mPlayerTheta = (double)mMouseMotionRelX * a;
         mPlayerPhi = mMousePitch_NaturalDir * (double)mMouseMotionRelY * a;
         mPlayerLookAtDir[0] = cos(mPlayerTheta);

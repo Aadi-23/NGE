@@ -39,6 +39,7 @@ protected:
     //-------------------------------------------------------
     void    Lsys_Axiom1();
     void    Lsys_Axiom2();
+    void    Lsys_Axiom3();
     //-------------------------------------------------------
 private:
     void    FX1(int depth);
